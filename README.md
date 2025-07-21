@@ -1,7 +1,7 @@
 # Outline
 ### 1.本地端ollama建置
 ### 2.本地端llava建置與實驗
-### 3.本地端deepseek建置與實驗
+### 3.本地端LLM建置與實驗
 ### 4.遠端TWCC ollama建置與實驗
 
 ## 1.本地端ollama建置
@@ -67,6 +67,12 @@ my-model為你自訂的LLM名稱，Modelfile為寫好的modelfile檔名(**包含
 **註:上述為windows用法，linux版不須加副檔名**
 
 **註:若是create有錯誤，代表modelfile可能有錯，大多是格式錯誤**
+
+若要確認model是否有建置成功，可以用cmd或是anaconda prompt輸入:
+
+```
+ollama list
+```
 
 對應參考程式碼在資料夾llava裡的ollama_create筆記本裡。
 
