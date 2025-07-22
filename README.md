@@ -90,6 +90,12 @@ ollama list
 
 ### 3-1.LLM建置
 基本上所有建置內容與上述章節沒有太大差別，差別在於使用ollama API時對於VLM與LLM的不同(詳細可參考資料夾LLM裡的LLM_ollama筆記本)
+與前面的實驗不同，此章節主要是圍繞在提示工程(Prompt Engineering)上面。
+
+有關提示工程，可以參考以下這篇:
+> https://www.promptingguide.ai/zh
+
+概括而言，提示工程在於讓LLM生成自己想要的內容，其可以透過自己準備好的文本內容來達成。
 ### 3-2.LLM實驗作業
 
 
