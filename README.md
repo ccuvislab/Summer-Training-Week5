@@ -42,7 +42,7 @@ ollama目前只能跑.gguf檔的LLM，若要將huggingface上其他尚未有.ggu
 
 ## 2.本地端llava建置與實驗
 
-### llava建置
+### 2-1.llava建置
 
 llava為VLM，可以利用prompt與圖片進行推理。
 
@@ -64,15 +64,16 @@ ollama create my-model -f Modelfile
 ```
 my-model為你自訂的LLM名稱，Modelfile為寫好的modelfile檔名(**包含副檔名**)
 
-**註:上述為windows用法，linux版不須加副檔名**
+**#註:上述為windows用法，linux版不須加副檔名**
 
-**註:若是create有錯誤，代表modelfile可能有錯，大多是格式錯誤**
+**#註:若是create有錯誤，代表modelfile可能有錯，大多是格式錯誤**
 
 若要確認model是否有建置成功，可以用cmd或是anaconda prompt輸入:
 
 ```
 ollama list
 ```
+此指令會顯示所有已建好並可以跑的模型名稱，若ollama create的模型名已在裡面，代表模型建置成功。
 
 對應參考程式碼在資料夾llava裡的ollama_create筆記本裡。
 
@@ -80,10 +81,13 @@ ollama list
 
 以上都準備完成後，可以參考資料夾llava裡的llava筆記本嘗試跑圖片與prompt。
 
-### llava實驗
+### 2-2.llava實驗
 
 #### 實驗說明
 利用你的prompt嘗試分辨資料夾llava裡的車種照片的車種(型號、顏色、廠牌...)，並截圖結果。
+
+## 3.本地端LLM建置與實驗
+
 
 
 
