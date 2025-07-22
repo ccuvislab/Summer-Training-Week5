@@ -96,8 +96,27 @@ ollama list
 > https://www.promptingguide.ai/zh
 
 概括而言，提示工程在於讓LLM生成自己想要的內容，其可以透過自己準備好的文本內容來達成。
-### 3-2.LLM實驗作業
 
+以下為利用提示工程創造一個簡單聊天機器人的範例實驗:
+
+modelfile的官方模板與範例:
+>https://ollama.readthedocs.io/en/modelfile/
+
+參考資料夾LLM裡的prompt_example.txt，這是利用gpt生成的對答組。根據上述模板，自定義system、user、assistant的內容，調整Temperature的數值達到你想樣的效果。
+
+可參考以下推薦的中文LLM來進行實驗:
+
+Qwen1.5-7B-Chat-GGUF:
+> https://huggingface.co/Qwen/Qwen1.5-7B-Chat-GGUF/tree/main
+
+Qwen2-7B-Instruct-GGUF:
+>https://huggingface.co/Qwen/Qwen2-7B-Instruct-GGUF/tree/main
+
+Yi-1.5-6B-Chat-GGUF
+>https://huggingface.co/bartowski/Yi-1.5-6B-Chat-GGUF/tree/main
+
+### 3-2.LLM實驗作業
+參考資料夾LLM裡的LLM_Experiment試算表，此為環境稽查報告與標註(分別是左欄與右欄)，利用已經標註好的環境稽查報告當作提示工程需要的文本，並輸入尚未標註好的資料(倒數兩個)生成他們的答案。
 
 
 
