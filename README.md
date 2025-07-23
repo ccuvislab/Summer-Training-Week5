@@ -88,11 +88,11 @@ ollama list
 ```
 此指令會顯示所有已建好並可以跑的模型名稱，若ollama create的模型名已在裡面，代表模型建置成功。
 
-對應參考程式碼在資料夾llava裡的ollama_create筆記本裡。
+對應參考程式碼在資料夾llava裡的[ollama_create筆記本](llava/ollama_create.ipynb)裡。
 
-若想要跑原版llava，可以參考在資料夾llava裡的modelfile。
+若想要跑原版llava，可以參考在資料夾llava裡的[modelfile](llava/llava1_6_7b_Q4_vanilla.modelfile)。
 
-以上都準備完成後，可以參考資料夾llava裡的llava筆記本嘗試跑圖片與prompt。
+以上都準備完成後，可以參考資料夾llava裡的[llava筆記本](llava/llava.ipynb)嘗試跑圖片與prompt。
 
 <a name="ii-2"></a>
 ### 2-2.llava實驗作業
@@ -104,7 +104,7 @@ ollama list
 
 <a name="iii-1"></a>
 ### 3-1.LLM建置
-基本上所有建置內容與上述章節沒有太大差別，差別在於使用ollama API時對於VLM與LLM的不同(詳細可參考資料夾LLM裡的LLM_ollama筆記本)
+基本上所有建置內容與上述章節沒有太大差別，差別在於使用ollama API時對於VLM與LLM的不同(詳細可參考資料夾LLM裡的[LLM_ollama筆記本](LLM/LLM_ollama.ipynb))
 與前面的實驗不同，此章節主要是圍繞在提示工程(Prompt Engineering)上面。
 
 有關提示工程，可以參考以下這篇:
@@ -120,6 +120,7 @@ modelfile的官方模板與範例:
 > [!TIP]
 > 參考資料夾LLM裡的[prompt_example.txt](LLM/prompt_example.txt)，這是利用gpt生成的對答組。根據上述模板，自定義system、user、assistant的內容，調整Temperature的數值達到你想樣的效果。
 
+<a name="list1"></a>
 可參考以下推薦的中文LLM來進行實驗:
 
 Qwen1.5-7B-Chat-GGUF:
@@ -150,8 +151,7 @@ Breeze-7B-Instruct-v1_0-GGUF:
 ### 3-2.LLM實驗作業
 > [!IMPORTANT]
 > 參考資料夾LLM裡的[LLM_Experiment試算表](LLM/LLM_Experiment.xlsx)，此為環境稽查報告與標註(分別是左欄與右欄)，嘗試修改與利用已經標註好的環境稽查報告當作提示工程需要的文本，
-並配合參考
-配合不同的LLM(參考上述推薦list)並輸入尚未標註好的資料(倒數兩個)生成他們的標註。
+可參考[LLM_ollama筆記本](LLM/LLM_ollama.ipynb)配合不同的LLM([參考上述推薦list](#list1))並輸入尚未標註好的資料(倒數兩個)生成他們的標註。
 
 <a name="iv"></a>
 ## 4.遠端TWCC ollama建置與實驗
