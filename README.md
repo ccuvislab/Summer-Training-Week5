@@ -161,7 +161,7 @@ Breeze-7B-Instruct-v1_0-GGUF:
 這樣就能避免本地端性能不足的問題(可以跑更大的LLM)，同時可以部屬給其他不同的應用端。
 
 > [!TIP]
-> 相關設置操作詳細參考**TWCC_ollama.pdf**
+> 相關設置操作詳細參考[**TWCC_ollama.pdf**](docs/TWCC_ollama.pdf)
 
 <a name="iv-2"></a>
 ### 4-2.實驗作業
