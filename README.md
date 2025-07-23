@@ -1,10 +1,11 @@
 # Outline
-### 1.本地端ollama建置
-### 2.本地端llava建置與實驗
-### 3.本地端LLM建置與實驗
-### 4.遠端TWCC ollama建置與實驗
+### [1.本地端ollama建置](#i)
+### [2.本地端llava建置與實驗](#ii)
+### [3.本地端LLM建置與實驗](#iii)
+### [4.遠端TWCC ollama建置與實驗](#iv)
 
-## 1.本地端ollama建置
+<a name="i"></a>
+## 1.本地端ollama建置:  
 ollama在LLM inference上具易部署且容器化的便利性。
 
 安裝ollama之前，要先確保NVIDIA CUDA等GPU驅動已經完成。
@@ -39,7 +40,7 @@ ollama目前只能跑.gguf檔的LLM，若要將huggingface上其他尚未有.ggu
 
 
 
-
+<a name="ii"></a>
 ## 2.本地端llava建置與實驗
 
 ### ///2-1.llava建置
@@ -64,9 +65,10 @@ ollama create my-model -f Modelfile
 ```
 my-model為你自訂的LLM名稱，Modelfile為寫好的modelfile檔名(**包含副檔名**)
 
-**#註:上述為windows用法，linux版不須加副檔名**
-
-**#註:若是create有錯誤，代表modelfile可能有錯，大多是格式錯誤**
+>[!WARNING]
+> **#註:上述為windows用法，linux版不須加副檔名**
+>
+> **#註:若是create有錯誤，代表modelfile可能有錯，大多是格式錯誤**
 
 若要確認model是否有建置成功，可以用cmd或是anaconda prompt輸入:
 
@@ -86,8 +88,8 @@ ollama list
 #### 實驗說明
 利用你的prompt嘗試分辨資料夾llava裡的車種照片的車種(型號、顏色、廠牌...)，並截圖結果。
 
-## 3.本地端LLM建置與實驗
-
+## 3.本地端LLM建置與實驗 
+<a name="iii"></a>
 ### ///3-1.LLM建置
 基本上所有建置內容與上述章節沒有太大差別，差別在於使用ollama API時對於VLM與LLM的不同(詳細可參考資料夾LLM裡的LLM_ollama筆記本)
 與前面的實驗不同，此章節主要是圍繞在提示工程(Prompt Engineering)上面。
@@ -112,17 +114,41 @@ Qwen1.5-7B-Chat-GGUF:
 Qwen2-7B-Instruct-GGUF:
 >https://huggingface.co/Qwen/Qwen2-7B-Instruct-GGUF/tree/main
 
-Yi-1.5-6B-Chat-GGUF
+Yi-1.5-6B-Chat-GGUF:
 >https://huggingface.co/bartowski/Yi-1.5-6B-Chat-GGUF/tree/main
 
+DeepSeek-R1-GGUF:
+>https://huggingface.co/unsloth/DeepSeek-R1-GGUF/tree/main
+
+Chinese-Alpaca-2-7B-GGUF:
+>https://huggingface.co/TheBloke/Chinese-Alpaca-2-7B-GGUF/tree/main
+
+blossom-v3-baichuan2-7B-GGUF
+>https://huggingface.co/TheBloke/blossom-v3-baichuan2-7B-GGUF/tree/main
+
+Llama-3-Taiwan-8B-Instruct-GGUF:
+>https://huggingface.co/chienweichang/Llama-3-Taiwan-8B-Instruct-GGUF/tree/main
+
+Breeze-7B-Instruct-v1_0-GGUF:
+>https://huggingface.co/YC-Chen/Breeze-7B-Instruct-v1_0-GGUF/tree/main
+
+
 ### ///3-2.LLM實驗作業
-參考資料夾LLM裡的LLM_Experiment試算表，此為環境稽查報告與標註(分別是左欄與右欄)，利用已經標註好的環境稽查報告當作提示工程需要的文本，並輸入尚未標註好的資料(倒數兩個)生成他們的標註。
+參考資料夾LLM裡的LLM_Experiment試算表，此為環境稽查報告與標註(分別是左欄與右欄)，嘗試修改與利用已經標註好的環境稽查報告當作提示工程需要的文本，
+配合不同的LLM(參考上述推薦list)並輸入尚未標註好的資料(倒數兩個)生成他們的標註。
 
 ## 4.遠端TWCC ollama建置與實驗
+<a name="iv"></a>
+### ///4-1.遠端TWCC ollama建置
 本章節主要是講述如何使用遠端伺服器(使用TWCC)建置ollama，並使用客戶端來傳輸prompt給伺服器端，等待伺服器端處理完後將生成的資料傳給客戶端。
-這樣就能避免本地端性能不足的問題(可以跑更大的LLM)，同時可以部屬給其他不同的應用端。
-相關設置操作
 
+這樣就能避免本地端性能不足的問題(可以跑更大的LLM)，同時可以部屬給其他不同的應用端。
+
+相關設置操作詳細參考**TWCC_ollama.pdf**
+
+### ///4-2.實驗作業
+
+在TWCC設置ollama並跑LLM，截圖伺服器端後台與客戶端生成結果。
 
 
 
