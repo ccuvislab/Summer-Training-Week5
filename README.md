@@ -1,8 +1,18 @@
 # Outline
 ### [1.本地端ollama建置](#i)
+
 ### [2.本地端llava建置與實驗](#ii)
+  -[2-1.llava建置](#ii-1)
+  
+  -[2-2.llava實驗作業](#ii-2)
 ### [3.本地端LLM建置與實驗](#iii)
+  -[3-1.LLM建置](#iii-1)
+  
+  -[3-2.LLM實驗作業](#iii-2)
 ### [4.遠端TWCC ollama建置與實驗](#iv)
+  -[4-1.遠端TWCC ollama建置](#iv-1)
+  
+  -[4-2.實驗作業](#iv-2)
 
 <a name="i"></a>
 ## 1.本地端ollama建置:  
@@ -43,7 +53,8 @@ ollama目前只能跑.gguf檔的LLM，若要將huggingface上其他尚未有.ggu
 <a name="ii"></a>
 ## 2.本地端llava建置與實驗
 
-### ///2-1.llava建置
+<a name="ii-1"></a>
+### 2-1.llava建置
 
 llava為VLM，可以利用prompt與圖片進行推理。
 
@@ -83,14 +94,16 @@ ollama list
 
 以上都準備完成後，可以參考資料夾llava裡的llava筆記本嘗試跑圖片與prompt。
 
-### ///2-2.llava實驗作業
+<a name="ii-2"></a>
+### 2-2.llava實驗作業
 > [!IMPORTANT]
 > 利用你的prompt嘗試分辨資料夾llava裡的車種照片的車種(型號、顏色、廠牌...)，並截圖結果。
 
 <a name="iii"></a>
 ## 3.本地端LLM建置與實驗 
 
-### ///3-1.LLM建置
+<a name="iii-1"></a>
+### 3-1.LLM建置
 基本上所有建置內容與上述章節沒有太大差別，差別在於使用ollama API時對於VLM與LLM的不同(詳細可參考資料夾LLM裡的LLM_ollama筆記本)
 與前面的實驗不同，此章節主要是圍繞在提示工程(Prompt Engineering)上面。
 
@@ -133,15 +146,16 @@ Llama-3-Taiwan-8B-Instruct-GGUF:
 Breeze-7B-Instruct-v1_0-GGUF:
 >https://huggingface.co/YC-Chen/Breeze-7B-Instruct-v1_0-GGUF/tree/main
 
-
-### ///3-2.LLM實驗作業
+<a name="iii-2"></a>
+### 3-2.LLM實驗作業
 > [!IMPORTANT]
 > 參考資料夾LLM裡的LLM_Experiment試算表，此為環境稽查報告與標註(分別是左欄與右欄)，嘗試修改與利用已經標註好的環境稽查報告當作提示工程需要的文本，
 配合不同的LLM(參考上述推薦list)並輸入尚未標註好的資料(倒數兩個)生成他們的標註。
 
-## 4.遠端TWCC ollama建置與實驗
 <a name="iv"></a>
-### ///4-1.遠端TWCC ollama建置
+## 4.遠端TWCC ollama建置與實驗
+<a name="iv-1"></a>
+### 4-1.遠端TWCC ollama建置
 本章節主要是講述如何使用遠端伺服器(使用TWCC)建置ollama，並使用客戶端來傳輸prompt給伺服器端，等待伺服器端處理完後將生成的資料傳給客戶端。
 
 這樣就能避免本地端性能不足的問題(可以跑更大的LLM)，同時可以部屬給其他不同的應用端。
@@ -149,7 +163,8 @@ Breeze-7B-Instruct-v1_0-GGUF:
 > [!TIP]
 > 相關設置操作詳細參考**TWCC_ollama.pdf**
 
-### ///4-2.實驗作業
+<a name="iv-2"></a>
+### 4-2.實驗作業
 > [!IMPORTANT]
 > 在TWCC設置ollama並跑LLM，截圖伺服器端後台與客戶端生成結果。
 
