@@ -118,7 +118,7 @@ modelfile的官方模板與範例:
 >https://ollama.readthedocs.io/en/modelfile/
 
 > [!TIP]
-> 參考資料夾LLM裡的prompt_example.txt，這是利用gpt生成的對答組。根據上述模板，自定義system、user、assistant的內容，調整Temperature的數值達到你想樣的效果。
+> 參考資料夾LLM裡的[prompt_example.txt](LLM/prompt_example.txt)，這是利用gpt生成的對答組。根據上述模板，自定義system、user、assistant的內容，調整Temperature的數值達到你想樣的效果。
 
 可參考以下推薦的中文LLM來進行實驗:
 
@@ -149,7 +149,8 @@ Breeze-7B-Instruct-v1_0-GGUF:
 <a name="iii-2"></a>
 ### 3-2.LLM實驗作業
 > [!IMPORTANT]
-> 參考資料夾LLM裡的LLM_Experiment試算表，此為環境稽查報告與標註(分別是左欄與右欄)，嘗試修改與利用已經標註好的環境稽查報告當作提示工程需要的文本，
+> 參考資料夾LLM裡的[LLM_Experiment試算表](LLM/LLM_Experiment.xlsx)，此為環境稽查報告與標註(分別是左欄與右欄)，嘗試修改與利用已經標註好的環境稽查報告當作提示工程需要的文本，
+並配合參考
 配合不同的LLM(參考上述推薦list)並輸入尚未標註好的資料(倒數兩個)生成他們的標註。
 
 <a name="iv"></a>
