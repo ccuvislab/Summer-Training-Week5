@@ -151,7 +151,7 @@ Breeze-7B-Instruct-v1_0-GGUF:
 ### 3-2.LLM實驗作業
 > [!IMPORTANT]
 > 參考資料夾LLM裡的[LLM_Experiment試算表](LLM/LLM_Experiment.xlsx)，此為環境稽查報告與標註(分別是左欄與右欄)，嘗試修改與利用已經標註好的環境稽查報告當作提示工程需要的文本，
-可參考[LLM_ollama筆記本](LLM/LLM_ollama.ipynb)配合不同的LLM([參考上述推薦list](#list1))並輸入尚未標註好的資料(倒數兩個)生成他們的標註。
+可參考[LLM_ollama筆記本](LLM/LLM_ollama.ipynb)配合不同的LLM([參考上述推薦list](#list1))並輸入尚未標註好的資料(倒數兩個)生成他們的標註，完成後截圖標註結果。
 
 <a name="iv"></a>
 ## 4.遠端TWCC ollama建置與實驗
