@@ -84,12 +84,12 @@ ollama list
 以上都準備完成後，可以參考資料夾llava裡的llava筆記本嘗試跑圖片與prompt。
 
 ### ///2-2.llava實驗作業
+> [!IMPORTANT]
+> 利用你的prompt嘗試分辨資料夾llava裡的車種照片的車種(型號、顏色、廠牌...)，並截圖結果。
 
-#### 實驗說明
-利用你的prompt嘗試分辨資料夾llava裡的車種照片的車種(型號、顏色、廠牌...)，並截圖結果。
-
-## 3.本地端LLM建置與實驗 
 <a name="iii"></a>
+## 3.本地端LLM建置與實驗 
+
 ### ///3-1.LLM建置
 基本上所有建置內容與上述章節沒有太大差別，差別在於使用ollama API時對於VLM與LLM的不同(詳細可參考資料夾LLM裡的LLM_ollama筆記本)
 與前面的實驗不同，此章節主要是圍繞在提示工程(Prompt Engineering)上面。
@@ -104,7 +104,8 @@ ollama list
 modelfile的官方模板與範例:
 >https://ollama.readthedocs.io/en/modelfile/
 
-參考資料夾LLM裡的prompt_example.txt，這是利用gpt生成的對答組。根據上述模板，自定義system、user、assistant的內容，調整Temperature的數值達到你想樣的效果。
+> [!TIP]
+> 參考資料夾LLM裡的prompt_example.txt，這是利用gpt生成的對答組。根據上述模板，自定義system、user、assistant的內容，調整Temperature的數值達到你想樣的效果。
 
 可參考以下推薦的中文LLM來進行實驗:
 
@@ -134,7 +135,8 @@ Breeze-7B-Instruct-v1_0-GGUF:
 
 
 ### ///3-2.LLM實驗作業
-參考資料夾LLM裡的LLM_Experiment試算表，此為環境稽查報告與標註(分別是左欄與右欄)，嘗試修改與利用已經標註好的環境稽查報告當作提示工程需要的文本，
+> [!IMPORTANT]
+> 參考資料夾LLM裡的LLM_Experiment試算表，此為環境稽查報告與標註(分別是左欄與右欄)，嘗試修改與利用已經標註好的環境稽查報告當作提示工程需要的文本，
 配合不同的LLM(參考上述推薦list)並輸入尚未標註好的資料(倒數兩個)生成他們的標註。
 
 ## 4.遠端TWCC ollama建置與實驗
@@ -144,11 +146,12 @@ Breeze-7B-Instruct-v1_0-GGUF:
 
 這樣就能避免本地端性能不足的問題(可以跑更大的LLM)，同時可以部屬給其他不同的應用端。
 
-相關設置操作詳細參考**TWCC_ollama.pdf**
+> [!TIP]
+> 相關設置操作詳細參考**TWCC_ollama.pdf**
 
 ### ///4-2.實驗作業
-
-在TWCC設置ollama並跑LLM，截圖伺服器端後台與客戶端生成結果。
+> [!IMPORTANT]
+> 在TWCC設置ollama並跑LLM，截圖伺服器端後台與客戶端生成結果。
 
 
 
