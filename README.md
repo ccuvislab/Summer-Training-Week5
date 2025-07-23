@@ -42,7 +42,7 @@ ollama目前只能跑.gguf檔的LLM，若要將huggingface上其他尚未有.ggu
 
 ## 2.本地端llava建置與實驗
 
-### 2-1.llava建置
+### ///2-1.llava建置
 
 llava為VLM，可以利用prompt與圖片進行推理。
 
@@ -81,14 +81,14 @@ ollama list
 
 以上都準備完成後，可以參考資料夾llava裡的llava筆記本嘗試跑圖片與prompt。
 
-### 2-2.llava實驗作業
+### ///2-2.llava實驗作業
 
 #### 實驗說明
 利用你的prompt嘗試分辨資料夾llava裡的車種照片的車種(型號、顏色、廠牌...)，並截圖結果。
 
 ## 3.本地端LLM建置與實驗
 
-### 3-1.LLM建置
+### ///3-1.LLM建置
 基本上所有建置內容與上述章節沒有太大差別，差別在於使用ollama API時對於VLM與LLM的不同(詳細可參考資料夾LLM裡的LLM_ollama筆記本)
 與前面的實驗不同，此章節主要是圍繞在提示工程(Prompt Engineering)上面。
 
@@ -115,9 +115,13 @@ Qwen2-7B-Instruct-GGUF:
 Yi-1.5-6B-Chat-GGUF
 >https://huggingface.co/bartowski/Yi-1.5-6B-Chat-GGUF/tree/main
 
-### 3-2.LLM實驗作業
-參考資料夾LLM裡的LLM_Experiment試算表，此為環境稽查報告與標註(分別是左欄與右欄)，利用已經標註好的環境稽查報告當作提示工程需要的文本，並輸入尚未標註好的資料(倒數兩個)生成他們的答案。
+### ///3-2.LLM實驗作業
+參考資料夾LLM裡的LLM_Experiment試算表，此為環境稽查報告與標註(分別是左欄與右欄)，利用已經標註好的環境稽查報告當作提示工程需要的文本，並輸入尚未標註好的資料(倒數兩個)生成他們的標註。
 
+## 4.遠端TWCC ollama建置與實驗
+本章節主要是講述如何使用遠端伺服器(使用TWCC)建置ollama，並使用客戶端來傳輸prompt給伺服器端，等待伺服器端處理完後將生成的資料傳給客戶端。
+這樣就能避免本地端性能不足的問題(可以跑更大的LLM)，同時可以部屬給其他不同的應用端。
+相關設置操作
 
 
 
