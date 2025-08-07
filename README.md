@@ -77,8 +77,6 @@ ollama create my-model -f Modelfile
 my-model為你自訂的LLM名稱，Modelfile為寫好的modelfile檔名(**包含副檔名**)
 
 >[!WARNING]
-> **#註:上述為windows用法，linux版不須加副檔名**
->
 > **#註:若是create有錯誤，代表modelfile可能有錯，大多是格式錯誤**
 
 若要確認model是否有建置成功，可以用cmd或是anaconda prompt輸入:
