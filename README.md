@@ -32,7 +32,7 @@ pytorch官網:
 ollama下載:
 > https://ollama.com/download
 
-安裝完後便可以使用ollama。(需要事先安裝Docker)
+安裝完後便可以使用ollama。(windows版需要事先安裝Docker)
 
 ollama使用完整指南:
 > https://github.com/datawhalechina/handy-ollama/blob/main/docs/C4/2.%20%E5%9C%A8%20Python%20%E4%B8%AD%E4%BD%BF%E7%94%A8%20Ollama%20API.md
