@@ -63,7 +63,7 @@ llava-v1.5-7B.gguf :
 
 要使用ollama跑模型，需要準備模型本身以及modelfile。
 modelfile為建立和共享模型的文件，包含生成的參數以及主要的提示工程都會在這裡實現。
-modelfile的準備僅需要利用記事本，在寫完之後改檔名為modelfile即可。
+modelfile的準備僅需要利用記事本，在寫完之後改副檔名為modelfile即可。
 
 modelfile的官方模板與範例:
 >https://ollama.readthedocs.io/en/modelfile/
