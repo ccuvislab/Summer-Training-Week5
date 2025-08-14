@@ -145,6 +145,9 @@ Llama-3-Taiwan-8B-Instruct-GGUF:
 Breeze-7B-Instruct-v1_0-GGUF:
 >https://huggingface.co/YC-Chen/Breeze-7B-Instruct-v1_0-GGUF/tree/main
 
+Gpt-oss-20b:
+>https://huggingface.co/unsloth/gpt-oss-20b-GGUF/tree/main
+
 <a name="iii-2"></a>
 ### 3-2.LLM實驗作業
 > [!IMPORTANT]
