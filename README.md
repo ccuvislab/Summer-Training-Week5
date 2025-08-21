@@ -2,17 +2,17 @@
 ### [1.本地端ollama建置](#i)
 
 ### [2.本地端llava建置與實驗](#ii)
-  -[2-1.llava建置](#ii-1)
+  - [2-1.llava建置](#ii-1)
   
-  -[2-2.llava實驗作業](#ii-2)
+  - [2-2.llava實驗作業](#ii-2)
 ### [3.本地端LLM建置與實驗](#iii)
-  -[3-1.LLM建置](#iii-1)
+  - [3-1.LLM建置](#iii-1)
   
-  -[3-2.LLM實驗作業](#iii-2)
+  - [3-2.LLM實驗作業](#iii-2)
 ### [4.遠端TWCC ollama建置與實驗](#iv)
-  -[4-1.遠端TWCC ollama建置](#iv-1)
+  - [4-1.遠端TWCC ollama建置](#iv-1)
   
-  -[4-2.實驗作業](#iv-2)
+  - [4-2.實驗作業](#iv-2)
 
 <a name="i"></a>
 ## 1.本地端ollama建置:  
@@ -21,31 +21,26 @@ ollama在LLM inference上具易部署且容器化的便利性。
 安裝ollama之前，要先確保NVIDIA CUDA等GPU驅動已經完成。
 安裝顯卡驅動可以參考以下網站:
 
-安裝教學: 
-> https://vocus.cc/article/67015afefd897800016a47e0
+  - [安裝教學:](https://vocus.cc/article/67015afefd897800016a47e0) 
 
-pytorch官網:
-> https://pytorch.org/get-started/locally/
+
+  - [pytorch官網:](https://pytorch.org/get-started/locally/)
 
 環境問題解決之後，到ollama官網選擇作業環境對應的安裝包並安裝。
 
-ollama下載:
-> https://ollama.com/download
+  - [ollama下載:](https://ollama.com/download)
 
 安裝完後便可以使用ollama。(windows版需要事先安裝Docker)
 
-ollama使用完整指南:
-> https://github.com/datawhalechina/handy-ollama/blob/main/docs/C4/2.%20%E5%9C%A8%20Python%20%E4%B8%AD%E4%BD%BF%E7%94%A8%20Ollama%20API.md
+  - [ollama使用完整指南:](https://github.com/datawhalechina/handy-ollama/blob/main/docs/C4/2.%20%E5%9C%A8%20Python%20%E4%B8%AD%E4%BD%BF%E7%94%A8%20Ollama%20API.md)
 
-ollama目前只能跑.gguf檔的LLM，若要將huggingface上其他尚未有.gguf檔轉檔，可以參考以下這篇:
-> https://medium.com/playtech/%E4%BD%BF%E7%94%A8llama-cpp%E5%B0%87huggingface-%E5%8F%96%E5%BE%97%E7%9A%84llm%E6%A8%A1%E5%9E%8B%E8%BD%89%E7%82%BA-gguf%E6%A0%BC%E5%BC%8F-879c3bd3505c
+
+ollama目前只能跑.gguf檔的LLM，若要將huggingface上其他尚未有.gguf檔轉檔，可以參考[這篇:](https://medium.com/playtech/%E4%BD%BF%E7%94%A8llama-cpp%E5%B0%87huggingface-%E5%8F%96%E5%BE%97%E7%9A%84llm%E6%A8%A1%E5%9E%8B%E8%BD%89%E7%82%BA-gguf%E6%A0%BC%E5%BC%8F-879c3bd3505c)
 
 目前只有超級電腦能跑完整的LLM，在inference上大部分所使用的都是量化模型(Quantization)，也就是壓縮過後的模型:
 
-量化模型的背景知識:
-> https://vocus.cc/article/6803b975fd8978000153e4ad
-
-> https://chih-sheng-huang821.medium.com/ai%E6%A8%A1%E5%9E%8B%E5%A3%93%E7%B8%AE%E6%8A%80%E8%A1%93-%E9%87%8F%E5%8C%96-quantization-966505128365
+  - [量化模型的背景知識1](https://vocus.cc/article/6803b975fd8978000153e4ad)
+  - [量化模型的背景知識2](https://chih-sheng-huang821.medium.com/ai%E6%A8%A1%E5%9E%8B%E5%A3%93%E7%B8%AE%E6%8A%80%E8%A1%93-%E9%87%8F%E5%8C%96-quantization-966505128365)
 
 
 
