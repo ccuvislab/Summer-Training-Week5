@@ -53,13 +53,13 @@ ollama目前只能跑.gguf檔的LLM，若要將huggingface上其他尚未有.ggu
 
 llava為VLM，可以利用prompt與圖片進行推理。
 
-🤖[llava-v1.5-7B.gguf](https://huggingface.co/second-state/Llava-v1.5-7B-GGUF/tree/main)
+  - 🤖[llava-v1.5-7B.gguf](https://huggingface.co/second-state/Llava-v1.5-7B-GGUF/tree/main)
 
 要使用ollama跑模型，需要準備模型本身以及modelfile。
 modelfile為建立和共享模型的文件，包含生成的參數以及主要的提示工程都會在這裡實現。
 modelfile的準備僅需要利用記事本，在寫完之後改副檔名為modelfile即可。
 
-📝[modelfile的官方模板與範例](https://ollama.readthedocs.io/en/modelfile/)
+  - 📝[modelfile的官方模板與範例](https://ollama.readthedocs.io/en/modelfile/)
 
 
 
@@ -106,7 +106,7 @@ ollama list
 
 以下為利用提示工程創造一個簡單聊天機器人的範例實驗:
 
-[modelfile的官方模板與範例:](https://ollama.readthedocs.io/en/modelfile/)
+  - 📝[modelfile的官方模板與範例:](https://ollama.readthedocs.io/en/modelfile/)
 
 
 > [!TIP]
@@ -115,31 +115,31 @@ ollama list
 <a name="list1"></a>
 可參考以下推薦的中文LLM來進行實驗:
 
-🤖[Qwen1.5-7B-Chat-GGUF:](https://huggingface.co/Qwen/Qwen1.5-7B-Chat-GGUF/tree/main)
+  - 🤖[Qwen1.5-7B-Chat-GGUF:](https://huggingface.co/Qwen/Qwen1.5-7B-Chat-GGUF/tree/main)
 
 
-🤖[Qwen2-7B-Instruct-GGUF:](https://huggingface.co/Qwen/Qwen2-7B-Instruct-GGUF/tree/main)
+  - 🤖[Qwen2-7B-Instruct-GGUF:](https://huggingface.co/Qwen/Qwen2-7B-Instruct-GGUF/tree/main)
 
 
-🤖[Yi-1.5-6B-Chat-GGUF](https://huggingface.co/bartowski/Yi-1.5-6B-Chat-GGUF/tree/main)
+  - 🤖[Yi-1.5-6B-Chat-GGUF](https://huggingface.co/bartowski/Yi-1.5-6B-Chat-GGUF/tree/main)
 
 
-🤖[DeepSeek-R1-GGUF](https://huggingface.co/unsloth/DeepSeek-R1-GGUF/tree/main)
+  - 🤖[DeepSeek-R1-GGUF](https://huggingface.co/unsloth/DeepSeek-R1-GGUF/tree/main)
 
 
-🤖[Chinese-Alpaca-2-7B-GGUF](https://huggingface.co/TheBloke/Chinese-Alpaca-2-7B-GGUF/tree/main)
+  - 🤖[Chinese-Alpaca-2-7B-GGUF](https://huggingface.co/TheBloke/Chinese-Alpaca-2-7B-GGUF/tree/main)
 
 
-🤖[blossom-v3-baichuan2-7B-GGUF](https://huggingface.co/TheBloke/blossom-v3-baichuan2-7B-GGUF/tree/main)
+  - 🤖[blossom-v3-baichuan2-7B-GGUF](https://huggingface.co/TheBloke/blossom-v3-baichuan2-7B-GGUF/tree/main)
 
 
-🤖[Llama-3-Taiwan-8B-Instruct-GGUF](https://huggingface.co/chienweichang/Llama-3-Taiwan-8B-Instruct-GGUF/tree/main)
+  - 🤖[Llama-3-Taiwan-8B-Instruct-GGUF](https://huggingface.co/chienweichang/Llama-3-Taiwan-8B-Instruct-GGUF/tree/main)
 
 
-🤖[Breeze-7B-Instruct-v1_0-GGUF](https://huggingface.co/YC-Chen/Breeze-7B-Instruct-v1_0-GGUF/tree/main)
+  - 🤖[Breeze-7B-Instruct-v1_0-GGUF](https://huggingface.co/YC-Chen/Breeze-7B-Instruct-v1_0-GGUF/tree/main)
 
 
-🤖[Gpt-oss-20b](https://huggingface.co/unsloth/gpt-oss-20b-GGUF/tree/main)
+  - 🤖[Gpt-oss-20b](https://huggingface.co/unsloth/gpt-oss-20b-GGUF/tree/main)
 
 
 <a name="iii-2"></a>
