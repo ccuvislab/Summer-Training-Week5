@@ -21,26 +21,26 @@ ollama在LLM inference上具易部署且容器化的便利性。
 安裝ollama之前，要先確保NVIDIA CUDA等GPU驅動已經完成。
 安裝顯卡驅動可以參考以下網站:
 
-  - [安裝教學:](https://vocus.cc/article/67015afefd897800016a47e0) 
+  - 📝[安裝教學:](https://vocus.cc/article/67015afefd897800016a47e0) 
 
 
-  - [pytorch官網:](https://pytorch.org/get-started/locally/)
+  - 📝[pytorch官網:](https://pytorch.org/get-started/locally/)
 
 環境問題解決之後，到ollama官網選擇作業環境對應的安裝包並安裝。
 
-  - [ollama下載:](https://ollama.com/download)
+  - 📝[ollama下載:](https://ollama.com/download)
 
 安裝完後便可以使用ollama。(windows版需要事先安裝Docker)
 
-  - [ollama使用完整指南:](https://github.com/datawhalechina/handy-ollama/blob/main/docs/C4/2.%20%E5%9C%A8%20Python%20%E4%B8%AD%E4%BD%BF%E7%94%A8%20Ollama%20API.md)
+  - 📝[ollama使用完整指南:](https://github.com/datawhalechina/handy-ollama/blob/main/docs/C4/2.%20%E5%9C%A8%20Python%20%E4%B8%AD%E4%BD%BF%E7%94%A8%20Ollama%20API.md)
 
 
 ollama目前只能跑.gguf檔的LLM，若要將huggingface上其他尚未有.gguf檔轉檔，可以參考[這篇:](https://medium.com/playtech/%E4%BD%BF%E7%94%A8llama-cpp%E5%B0%87huggingface-%E5%8F%96%E5%BE%97%E7%9A%84llm%E6%A8%A1%E5%9E%8B%E8%BD%89%E7%82%BA-gguf%E6%A0%BC%E5%BC%8F-879c3bd3505c)
 
 目前只有超級電腦能跑完整的LLM，在inference上大部分所使用的都是量化模型(Quantization)，也就是壓縮過後的模型:
 
-  - [量化模型的背景知識1](https://vocus.cc/article/6803b975fd8978000153e4ad)
-  - [量化模型的背景知識2](https://chih-sheng-huang821.medium.com/ai%E6%A8%A1%E5%9E%8B%E5%A3%93%E7%B8%AE%E6%8A%80%E8%A1%93-%E9%87%8F%E5%8C%96-quantization-966505128365)
+  - 📝[量化模型的背景知識1](https://vocus.cc/article/6803b975fd8978000153e4ad)
+  - 📝[量化模型的背景知識2](https://chih-sheng-huang821.medium.com/ai%E6%A8%A1%E5%9E%8B%E5%A3%93%E7%B8%AE%E6%8A%80%E8%A1%93-%E9%87%8F%E5%8C%96-quantization-966505128365)
 
 
 
@@ -53,15 +53,14 @@ ollama目前只能跑.gguf檔的LLM，若要將huggingface上其他尚未有.ggu
 
 llava為VLM，可以利用prompt與圖片進行推理。
 
-llava-v1.5-7B.gguf :
-> https://huggingface.co/second-state/Llava-v1.5-7B-GGUF/tree/main
+🤖[llava-v1.5-7B.gguf](https://huggingface.co/second-state/Llava-v1.5-7B-GGUF/tree/main)
 
 要使用ollama跑模型，需要準備模型本身以及modelfile。
 modelfile為建立和共享模型的文件，包含生成的參數以及主要的提示工程都會在這裡實現。
 modelfile的準備僅需要利用記事本，在寫完之後改副檔名為modelfile即可。
 
-modelfile的官方模板與範例:
->https://ollama.readthedocs.io/en/modelfile/
+📝[modelfile的官方模板與範例](https://ollama.readthedocs.io/en/modelfile/)
+
 
 
 模型本身以及modelfile準備好之後，最好是放在同個資料夾(modelfile中的FROM參數主要是對應到LLM的檔案名稱與位置)。
@@ -116,32 +115,32 @@ ollama list
 <a name="list1"></a>
 可參考以下推薦的中文LLM來進行實驗:
 
-[Qwen1.5-7B-Chat-GGUF:](https://huggingface.co/Qwen/Qwen1.5-7B-Chat-GGUF/tree/main)
+🤖[Qwen1.5-7B-Chat-GGUF:](https://huggingface.co/Qwen/Qwen1.5-7B-Chat-GGUF/tree/main)
 
 
-[Qwen2-7B-Instruct-GGUF:](https://huggingface.co/Qwen/Qwen2-7B-Instruct-GGUF/tree/main)
+🤖[Qwen2-7B-Instruct-GGUF:](https://huggingface.co/Qwen/Qwen2-7B-Instruct-GGUF/tree/main)
 
 
-Yi-1.5-6B-Chat-GGUF:
->https://huggingface.co/bartowski/Yi-1.5-6B-Chat-GGUF/tree/main
+🤖[Yi-1.5-6B-Chat-GGUF](https://huggingface.co/bartowski/Yi-1.5-6B-Chat-GGUF/tree/main)
 
-DeepSeek-R1-GGUF:
->https://huggingface.co/unsloth/DeepSeek-R1-GGUF/tree/main
 
-Chinese-Alpaca-2-7B-GGUF:
->https://huggingface.co/TheBloke/Chinese-Alpaca-2-7B-GGUF/tree/main
+🤖[DeepSeek-R1-GGUF](https://huggingface.co/unsloth/DeepSeek-R1-GGUF/tree/main)
 
-blossom-v3-baichuan2-7B-GGUF
->https://huggingface.co/TheBloke/blossom-v3-baichuan2-7B-GGUF/tree/main
 
-Llama-3-Taiwan-8B-Instruct-GGUF:
->https://huggingface.co/chienweichang/Llama-3-Taiwan-8B-Instruct-GGUF/tree/main
+🤖[Chinese-Alpaca-2-7B-GGUF](https://huggingface.co/TheBloke/Chinese-Alpaca-2-7B-GGUF/tree/main)
 
-Breeze-7B-Instruct-v1_0-GGUF:
->https://huggingface.co/YC-Chen/Breeze-7B-Instruct-v1_0-GGUF/tree/main
 
-Gpt-oss-20b:
->https://huggingface.co/unsloth/gpt-oss-20b-GGUF/tree/main
+🤖[blossom-v3-baichuan2-7B-GGUF](https://huggingface.co/TheBloke/blossom-v3-baichuan2-7B-GGUF/tree/main)
+
+
+🤖[Llama-3-Taiwan-8B-Instruct-GGUF](https://huggingface.co/chienweichang/Llama-3-Taiwan-8B-Instruct-GGUF/tree/main)
+
+
+🤖[Breeze-7B-Instruct-v1_0-GGUF](https://huggingface.co/YC-Chen/Breeze-7B-Instruct-v1_0-GGUF/tree/main)
+
+
+🤖[Gpt-oss-20b](https://huggingface.co/unsloth/gpt-oss-20b-GGUF/tree/main)
+
 
 <a name="iii-2"></a>
 ### 📌3-2.LLM實驗作業
