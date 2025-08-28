@@ -100,15 +100,15 @@ ollama list
 基本上所有建置內容與上述章節沒有太大差別，差別在於使用ollama API時對於VLM與LLM的不同(詳細可參考資料夾LLM裡的[LLM_ollama筆記本](LLM/LLM_ollama.ipynb))
 與前面的實驗不同，此章節主要是圍繞在提示工程(Prompt Engineering)上面。
 
-有關提示工程，可以參考以下這篇:
-> https://www.promptingguide.ai/zh
+有關提示工程，可以參考以下[這篇:](https://www.promptingguide.ai/zh)
+
 
 概括而言，提示工程在於讓LLM生成自己想要的內容，其可以透過自己準備好的文本內容來達成。
 
 以下為利用提示工程創造一個簡單聊天機器人的範例實驗:
 
-modelfile的官方模板與範例:
->https://ollama.readthedocs.io/en/modelfile/
+[modelfile的官方模板與範例:](https://ollama.readthedocs.io/en/modelfile/)
+
 
 > [!TIP]
 > 參考資料夾LLM裡的[prompt_example.txt](LLM/prompt_example.txt)，這是利用gpt生成的對答組。根據上述模板，自定義system、user、assistant的內容，調整Temperature的數值達到你想樣的效果。
@@ -116,11 +116,11 @@ modelfile的官方模板與範例:
 <a name="list1"></a>
 可參考以下推薦的中文LLM來進行實驗:
 
-Qwen1.5-7B-Chat-GGUF:
-> https://huggingface.co/Qwen/Qwen1.5-7B-Chat-GGUF/tree/main
+[Qwen1.5-7B-Chat-GGUF:](https://huggingface.co/Qwen/Qwen1.5-7B-Chat-GGUF/tree/main)
 
-Qwen2-7B-Instruct-GGUF:
->https://huggingface.co/Qwen/Qwen2-7B-Instruct-GGUF/tree/main
+
+[Qwen2-7B-Instruct-GGUF:](https://huggingface.co/Qwen/Qwen2-7B-Instruct-GGUF/tree/main)
+
 
 Yi-1.5-6B-Chat-GGUF:
 >https://huggingface.co/bartowski/Yi-1.5-6B-Chat-GGUF/tree/main
@@ -152,7 +152,7 @@ Gpt-oss-20b:
 <a name="iv"></a>
 ## 🔍4.遠端TWCC ollama建置與實驗
 <a name="iv-1"></a>
-### 4-1.遠端TWCC ollama建置
+### 🚀4-1.遠端TWCC ollama建置
 本章節主要是講述如何使用遠端伺服器(使用TWCC)建置ollama，並使用客戶端來傳輸prompt給伺服器端，等待伺服器端處理完後將生成的資料傳給客戶端。
 
 這樣就能避免本地端性能不足的問題(可以跑更大的LLM)，同時可以部屬給其他不同的應用端。
