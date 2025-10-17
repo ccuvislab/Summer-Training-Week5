@@ -141,6 +141,8 @@ ollama list
 
   - 🤖[Gpt-oss-20b](https://huggingface.co/unsloth/gpt-oss-20b-GGUF/tree/main)
 
+  - 🤖[gemma-7b](https://huggingface.co/google/gemma-7b-GGUF/tree/main)
+
 
 <a name="iii-2"></a>
 ### 📌3-2.LLM實驗作業
